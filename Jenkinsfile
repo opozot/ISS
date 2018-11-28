@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh 'apt-get update && apt-get install -y python3-pip'
                 sh 'pip install requests'
+                sh 'python main.py'
             }
         }
     }
